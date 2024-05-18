@@ -4,6 +4,7 @@ using MVW_EF_Razor_demo.Models;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace MVW_EF_Razor_demo.Migrations
 {
     [DbContext(typeof(RatingSystemContext))]
-    partial class RatingSystemContextModelSnapshot : ModelSnapshot
+    [Migration("20240518093137_AnnotationAdded")]
+    partial class AnnotationAdded
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

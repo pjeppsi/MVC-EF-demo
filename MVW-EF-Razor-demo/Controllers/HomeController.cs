@@ -23,6 +23,10 @@ namespace MVW_EF_Razor_demo.Controllers
             return View();
         }
 
+        public IActionResult Matches()
+        {
+            return View();
+        }
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {
